@@ -7,6 +7,7 @@ environment:
       CONFIG: Release
 
 build_script:
+  - dir C:\Libraries\boost_1_58_0\lib32-msvc-14.0
   - mkdir build
   - cd build
   - cmake -G "%GENERATOR%" -DBOOST_INCLUDEDIR:PATH=C:/Libraries/boost_1_58_0 -DBOOST_LIBRARYDIR:PATH=C:/Libraries/boost_1_58_0/lib32-msvc-14.0 ..
